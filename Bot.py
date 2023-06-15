@@ -28,12 +28,12 @@ def CheckMinerProcess():
 
 
 
-ADMIN_USER_ID = os.environ.get("ADMIN_USER_ID")
+ADMIN_USER_ID = os.environ.get("6068964976")
 BOT_API_TOKEN = os.environ.get("5645652334:AAELGN8hlonR2r2Z54kF3aEr6ybvEMKo7j8")
 
 if BOT_API_TOKEN != None and ADMIN_USER_ID != None:
     try:
-        ADMIN_USER_ID = (int(6068964976))
+        ADMIN_USER_ID = (int(ADMIN_USER_ID))
     except Exception:
         print("\nError : ADMIN_USER_ID Is Not Integer .\n")
     else:
