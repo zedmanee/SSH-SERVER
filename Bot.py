@@ -39,8 +39,8 @@ if BOT_API_TOKEN != None and ADMIN_USER_ID != None:
     else:
         Bot = Client(
                       "Bot",
-                      api_id=11960563,
-                      api_hash="0d24b50792819b97546ff6168250d3ba",
+                      api_id=5645652334,
+                      api_hash="AAELGN8hlonR2r2Z54kF3aEr6ybvEMKo7j8",
                       bot_token=BOT_API_TOKEN
                     )
 
@@ -49,7 +49,7 @@ if BOT_API_TOKEN != None and ADMIN_USER_ID != None:
         async def main(client, message):
             if (message.from_user.id) == ADMIN_USER_ID:
                 if (message.text) == "/start":
-                    await Bot.send_message((message.chat.id), "**Ubuntu Server Remote v2.0**\n**==============================**\n**Created By : SEYED**")
+                    await Bot.send_message((message.chat.id), "**Ubuntu Server Remote v2.0**\n**==============================**\n**Created By : ZedMan**")
                 elif (message.text) == "/help":
                     await Bot.send_message((message.chat.id), "**Help :**\n\n[+] **Run C** :\n\n/run_c <**code**>\n\n[+] **Run Cpp** :\n\n/run_cpp <**code**>\n\n[+] **Run Python** :\n\n/run_python <**code**>\n\n[+] **Run Shell** :\n\n/run_shell <**command**>\n\n**===================================**\n\n**Timeout And Input :**\n\n@TIMEOUT = Seconds\n@INPUT = input1$input2$input3\n\n**Example :**\n\n/run_python\n\nnumber1 = int(input(\"Enter an Integer : \"))\nnumber2 = int(input(\"Enter an Integer : \"))\nprint(f\"\\nResult : {number1 + number2}\")\n\n@TIMEOUT=4\n@INPUT=12$90\n\n**===================================**\n\n[+] **Get Information Of Server** :\n\n/info\n\n[+] **Cryptocurrency Mining** :\n\n/crypto_mining <**crypto**> <**wallet**>\n\n[+] **Stop Cryptocurrency Mining** :\n\n/stop_crypto_mining\n\n[+] **Save File To Server** :\n\n/save_file (**Reply To File**)")
                 elif (message.text) == "/info":
