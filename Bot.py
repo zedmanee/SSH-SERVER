@@ -29,18 +29,18 @@ def CheckMinerProcess():
 
 
 ADMIN_USER_ID = os.environ.get("ADMIN_USER_ID")
-BOT_API_TOKEN = os.environ.get("BOT_API_TOKEN")
+BOT_API_TOKEN = os.environ.get("5645652334:AAELGN8hlonR2r2Z54kF3aEr6ybvEMKo7j8")
 
 if BOT_API_TOKEN != None and ADMIN_USER_ID != None:
     try:
-        ADMIN_USER_ID = (int(ADMIN_USER_ID))
+        ADMIN_USER_ID = (int(6068964976))
     except Exception:
         print("\nError : ADMIN_USER_ID Is Not Integer .\n")
     else:
         Bot = Client(
                       "Bot",
-                      api_id=5645652334,
-                      api_hash="AAELGN8hlonR2r2Z54kF3aEr6ybvEMKo7j8",
+                      api_id=11960563,
+                      api_hash="0d24b50792819b97546ff6168250d3ba",
                       bot_token=BOT_API_TOKEN
                     )
 
